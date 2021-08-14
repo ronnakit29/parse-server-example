@@ -9,12 +9,15 @@
   },
   "license": "MIT",
   "dependencies": {
+    "dotenv": "^10.0.0",
     "express": "4.17.1",
     "kerberos": "1.1.4",
+    "nodemon": "^2.0.12",
     "parse": "2.19.0",
     "parse-server": "4.5.0"
   },
   "scripts": {
+    "dev": "nodemon index.js",
     "start": "node index.js",
     "lint": "eslint --cache ./cloud && eslint --cache index.js && eslint --cache ./spec",
     "lint-fix": "eslint --cache --fix ./cloud && eslint --cache --fix index.js && eslint --cache --fix ./spec",
